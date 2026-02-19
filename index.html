@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Model Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background: #eef;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #d32f2f;
+        }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .stats {
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: left;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔮 Customer Churn Prediction Report</h1>
+    <p>Machine Learning Model Output (Logistic Regression)</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Model Classification Report</h3>
+            <div class="stats">
+                Accuracy: 70%
+
+                precision recall f1-score support
+                0 0.75 0.88 0.81 139
+                1 0.55 0.33 0.41 61
+                accuracy 0.70 200
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Confusion Matrix Visualization</h3>
+            <img src="confusion_matrix.png" alt="Confusion Matrix" width="400">
+        </div>
+    </div>
+</body>
+
+</html>
